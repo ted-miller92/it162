@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 		<!--this will be header.php-->
 		<?php include "includes/header.php";?>
 		<!--End header.php-->

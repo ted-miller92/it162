@@ -54,12 +54,17 @@ footer{
 }
 footer a{
 	text-decoration:none;
-	color:#D7F9F1;
+	color:#b2d3ca;
 }
 footer a:hover{
 	color:#2D4739;
 }
-
+/*fontAwesome icon styles*/
+i.logo{
+	color: #7AA095;
+	font-size:0.75em;
+	margin-right:1%;
+}
 /*Tablet*/
 @media screen and (min-width:599px){
 	article{
@@ -157,7 +162,7 @@ footer a:hover{
   
   /* Add an active class to highlight the current page */
 .topnav a.active {
-	background-color: #7AA095 ;
+	background-color: #b2d3ca ;
     color: #2D4739;
 }
   
