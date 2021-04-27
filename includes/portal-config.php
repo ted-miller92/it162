@@ -21,7 +21,7 @@ $logo_color = '';
 
 switch(THIS_PAGE){
     case 'index.php':
-        $title = "Ted's IT162 Title Page";
+        $title = "Ted's IT162 Portal Page";
         $logo = 'fa-home';
         $pageID = 'Welcome';
     break;
