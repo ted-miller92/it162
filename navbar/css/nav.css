@@ -1,0 +1,20 @@
+html{
+    font-family:sans-serif;
+}
+.navContainer{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#AA9;
+}
+.nav{
+    padding:1.5vw;
+}
+a{
+    text-decoration:none;
+    color:white;
+    font-size:1.5em;
+}
+a:hover{
+    color:#377;
+}
