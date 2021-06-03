@@ -1,0 +1,129 @@
+/*Global styles*/
+
+html{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*Mobile First*/
+
+/*Header*/
+
+#header{
+    height:50vw;
+    background: linear-gradient(0deg,rgba(21, 24, 44, 0.9), rgba(16, 40, 107, 0.5)), url("../images/misc/shop2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position-y: 0, 0;
+    background-position-x: 0, 0;
+}
+.logoWrapper{
+    position:relative;
+    text-align:center;
+    top:30%;
+}
+img#logo{
+    width:60%;
+    max-width:100%;
+}
+/*End Header*/
+
+/*Navigation*/
+
+#menuButton{
+    font-size:13vw;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:10;
+    color:white;
+    background-color:rgba(12, 20, 65, 0.9);
+}
+#mobileMenu{
+    display:none;
+}
+#mobileMenu.visible{
+    display:flex;
+    position:absolute;
+    background-color:rgba(5, 12, 48, 0.97);
+    top:0;
+    height:100%;
+    width:100%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.menuItem{
+    font-size:13vw;
+    padding:10vw 0 0 0;
+}
+/*End Navigation*/
+#mobileMenu a {
+    text-decoration:none;
+    color:white;
+}
+/*Tablet*/
+/********/
+@media screen and (min-width: 450px) and (max-width:1023px){
+    #header{
+        height:40vw;
+        background-size: cover, cover;
+    }
+    .logoWrapper{
+        position:relative;
+        text-align:center;
+        top:28%;
+    }
+    img#logo{
+        width:40%;
+        max-width:100%;
+    }
+    #menuButton{
+        display:none;
+    }
+    #mobileMenu{
+        display:flex;
+        flex-direction:row;
+        position:sticky;
+        width:100vw;
+        justify-content:space-evenly;
+        background-color:black;
+    }
+    .menuItem{
+        font-size:5vw;
+        padding:0;
+    }
+}
+/*Desktop*/
+/*********/
+@media screen and (min-width:1024px){
+    #header{
+        height:30vw;
+        background-size: cover, cover;
+        background-position-y: 30%, 0, 0;
+    }
+    .logoWrapper{
+        position:relative;
+        text-align:center;
+        top:30%;
+    }
+    img#logo{
+        width:35%;
+        max-width:100%;
+    }
+    #menuButton{
+        display:none;
+    }
+    #mobileMenu{
+        display:flex;
+        flex-direction:row;
+        position:sticky;
+        width:80vw;
+        justify-content:space-evenly;
+        background-color:black;
+        margin:auto;
+    }
+    .menuItem{
+        font-size:3vw;
+        padding:0;
+    }
+}
