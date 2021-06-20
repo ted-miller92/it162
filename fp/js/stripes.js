@@ -12,5 +12,4 @@ for (var i = 0; i < colors.length; i++){                            //loop that 
     }
     var stripeContainer = document.getElementById('stripes');
     stripeContainer.appendChild(stripe);
-}
-menuButton.addEventListener("click", openMenu);
+};

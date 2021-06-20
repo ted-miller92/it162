@@ -1,26 +1,28 @@
-<?php include "includes/header.php"; ?>
-
-        <!--Main Content-->
-        <div id="mainContent">
+<?php include "includes/header.php";?>
+     <!--Main Content-->
+     <div id="mainContent">
             <!--Left Column-->
             <article>
-                <div class="panel sectionOne">
-                    <h2>Welcome</h2>
-                    <br>
-                    <p>Swing by for coffee or a quick tune. Enjoy breakfast while we provide the service you need, or have a beer and talk about the bike build of your dreams.</p>
-                </div>
                 <div class="panel sectionTwo">
-                    <h2>Bites</h2>
-                    <br>
-                    <p>Enjoy a delicious breakfast sandwich or the local favorite breakfast burrito. Our tiny kitchen provides an extensive menu, with great vegan options and a variety of styles. You'll be sure to find a new favorite whatever you order. </p>
+                    <p>Our customers are our priority. We try our best to be available to you druing business hours if you have questions, concerns or just want to say hello. Don't hesitate to text us at <a href="tel:123-456-7890">123-456-7890</a>, it's usually the quickest way to get a response.</p>
                 </div>
-                <br>
-                <div class="orderHereBig" ><a id="orderHere" href=#>Order here!</a></div>    
-                <br>
                 <div class="panel sectionOne">
-                    <h2>Bikes</h2>
-                    <br>
-                    <p>The full-service shop at Peloton can help you with fixing a flat or with overhauling suspension parts. We can get any part you need or do a full bike build. Either drop by or <a class="contactUs" href="contact.php">contact us here</a> to talk directly to the mechanics.</p>
+                <?php
+                    /*
+                    * Below are 2 different forms to be re-used       
+                    * 
+                    * Only use one at a time, comment out the other!       
+                    *
+                    */
+                    include 'includes/contact_include.php'; #site keys & code here
+                
+                    $toAddress = "ted.miller92@gmail.com";  //place your/your client's email address here
+                    $toName = "Ted Miller"; //place your client's name here
+                    $website = "Contact form test";  //place NAME of your client's website
+
+                    echo loadContact('simple.php');#demonstrates a simple contact form
+                    //echo loadContact('multiple.php');#demonstrates multiple form elements
+                ?>  
                 </div>
             </article>
             <!--End Left Column-->
@@ -49,5 +51,4 @@
             <!--End Right Column-->
         </div>
         <!--end Main Content-->
-
-<?php include "includes/footer.php"; ?>
+<?php include "includes/footer.php";?>

@@ -10,3 +10,4 @@ function openMenu(){
         mobileMenu.classList.add("visible");
     }
 }
+menuButton.addEventListener("click", openMenu);

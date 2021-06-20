@@ -21,30 +21,36 @@ $logo_color = '';
 
 switch(THIS_PAGE){
     case 'index.php':
-        $title = "Ted's IT162 Portal Page";
-        $logo = 'fa-home';
-        $pageID = 'Welcome';
+        $title = "Cafe & Bike Shop";
+        $pageID = 'Seattle Cafe & Bike Shop';
     break;
 
-    case 'contactme.php':
-        $title = "Contact Ted";
-        $logo = 'fa-pencil-square-o';
-        $pageID = 'Contact Ted';
+    case 'cafe.php':
+        $title = "Cafe";
+        $pageID = "Cafe";
         $logo_color = ' style="color:#C28C7B"';
     break;
 
-    case 'aia.php':
-        $title = "AIA";
-        $logo = 'fa-universal-access';
-        $pageID = 'AIA';
+    case 'shop.php':
+        $title = "Shop";
+        $pageID = "Shop";
         $logo_color = ' style="color:#C28C7B"';
     break;
 
-    case 'flowchart.php':
-        $title = "Flowchart";
-        $logo = 'fas fa-angle-double-right';
-        $pageID = 'flowchart';
+    case 'brands.php':
+        $title = "Brands";
+        $pageID = "Brands We Work With";
         $logo_color = ' style="color:#C28C7B"';
+    break;
+    
+    case 'about.php':
+        $title = "About Us";
+        $pageID = "About Us";
+    break;
+    
+    case 'contact.php':
+        $title = "Contact";
+        $pageID = "Get in Touch";
     break;
 
     default:
@@ -55,12 +61,12 @@ switch(THIS_PAGE){
 }
 
 //place URL & labels in the array here for navigation:
-$nav1['index.php'] = "Home";
-$nav1['big/index.php'] = "Big";
-$nav1['aia.php'] = "AIA";
-$nav1['flowchart.php'] = "Flowchart";
-$nav1['fp/index.php'] = "Final Project";
-$nav1['contactme.php'] = "Contact Ted";
+$nav1['index.php'] = "Peloton";
+$nav1['cafe.php'] = "Cafe";
+$nav1['shop.php'] = "Shop";
+$nav1['brands.php'] = "Brands";
+$nav1['about.php'] = "About";
+$nav1['contact.php'] = "Contact";
 
 /*
 makeLinks function will create our dynamic nav when called.
@@ -75,9 +81,9 @@ function makeLinks($linkArray)
     {
         if($url == THIS_PAGE)
         {//active page - add class reference
-	    	$myReturn .= '<a class="active" href="' . $url . '">' . $text . '</a>' . PHP_EOL;
+	    	$myReturn .= '<a class="menuItem" href="' . $url . '">' . $text . '</a>' . PHP_EOL;
     	}else{
-	    	$myReturn .= '<a href="' . $url . '">' . $text . '</a>'  . PHP_EOL;
+	    	$myReturn .= '<a class="menuItem" href="' . $url . '">' . $text . '</a>'  . PHP_EOL;
     	}    
     }
       
